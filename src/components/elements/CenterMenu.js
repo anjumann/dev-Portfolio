@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Button } from "../ui/button"
 
 
-const Navigation = [
+export const Navigation = [
     {
         name: "Home",
         path: "/",
@@ -33,11 +33,9 @@ export default function CenterMenu() {
             {Navigation.map((item, index) => {
 
                 return (
-                    <>
-                        <Link href={item.path} key={index} >
-                            <Button variant='ghost' > {item.name} </Button>
-                        </Link>
-                    </>
+                    <Link href={item.path} key={index} >
+                        <Button variant='ghost' > {item.name} </Button>
+                    </Link>
                 )
             })
             }
