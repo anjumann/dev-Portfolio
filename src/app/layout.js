@@ -1,3 +1,4 @@
+import ThemeWrapper from '@/lib/ThemeProvider'
 import './globals.css'
 
 export const metadata = {
@@ -8,7 +9,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className=''>{children}</body>
+      <body className=''>
+        <ThemeWrapper>
+          {children}
+        </ThemeWrapper>
+      </body>
     </html>
   )
 }

@@ -1,3 +1,7 @@
+body::-webkit-scrollbar{
+  display: none;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -37,8 +41,8 @@
   }
  
   .dark {
-    --background: 20 14.3% 4.1%;
-    --foreground: 60 9.1% 97.8%;
+    --background: #08080D;
+    --foreground: #BCBABC;
  
     --muted: 12 6.5% 15.1%;
     --muted-foreground: 24 5.4% 63.9%;
@@ -75,4 +79,9 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+.application-width{
+  @apply w-11/12 md:w-11/12 lg:w-10/12 mx-auto
 }
