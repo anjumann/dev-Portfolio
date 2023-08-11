@@ -44,16 +44,16 @@ const Work = () => {
                     experience.map((item, index) => {
                         return (
                             <div key={index} className="">
-                                <div className="text-xl font-rem flexStart">
-                                    {item.company} - <span className='text-lg font-thin px-1' >{" "}{item.position} </span>
+                                <div className="text-xl font-rem flexStart flex-wrap">
+                                    {item.company} - <span className='text-base mt-1 font-thin px-1' >{" "}{item.position} </span>
                                 </div>
-                                <span> {item.duration} </span>
+                                <span  className='text-sm mt-3'> {item.duration} </span>
                                 <ul className='text-sm mt-3' >
-                                    <li className=' list-inside' >
-                                        - {item.description[1]}
+                                    <li className='list-disc list-inside' >
+                                        {item.description[1]}
                                     </li>
-                                    <li className=' list-inside' >
-                                        - {item.description[2]}
+                                    <li className='list-disc list-inside' >
+                                        {item.description[2]}
                                     </li>
                                 </ul>
                             </div>

@@ -79,11 +79,11 @@ const Projects = () => {
                 {
                     ProjectList.map((project, index) => {
                         return (
-                            <div className="grid grid-cols-4" key={index}>
+                            <div className="grid grid-rows-2 md:grid-cols-4" key={index}>
                                 <div className="text-xl font-rem flexStart">
                                     <Image src={`/projects/${project.image}`} alt="nextjs" width={300} height={300} className='rounded-lg' />
                                 </div>
-                                <div className='px-3 col-span-3'>
+                                <div className='px-3 md:col-span-3'>
                                     <h3>
                                         {project.name}
                                     </h3>
@@ -93,7 +93,7 @@ const Projects = () => {
                                         ))}
                                     </ul>
 
-                                    <div className="flex gap-3 mt-5">
+                                    <div className="flex flex-wrap  gap-3 mt-5">
                                         <Link href={project.github} target='_blank' >
                                             <Button variant='outline'  >
                                                 projectGithub

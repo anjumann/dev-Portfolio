@@ -109,7 +109,7 @@ const Skill = () => {
                     <div className="text-xl font-rem flexStart">
                         Frontend
                     </div>
-                    <div className='flex gap-4 mt-5' >
+                    <div className='flex gap-4 mt-5 flex-wrap' >
                         {
                             frontend.map((item, index) => {
                                 return (
@@ -125,7 +125,7 @@ const Skill = () => {
                     <div className="text-xl font-rem flexStart">
                         Backend
                     </div>
-                    <div className='flex gap-4 mt-5' >
+                    <div className='flex gap-4 mt-5 flex-wrap' >
                         {
                             backend.map((item, index) => {
                                 return (
@@ -141,7 +141,7 @@ const Skill = () => {
                     <div className="text-xl font-rem flexStart">
                         Languages
                     </div>
-                    <div className='flex gap-4 mt-5' >
+                    <div className='flex gap-4 mt-5 flex-wrap' >
                         {
                             languages.map((item, index) => {
                                 return (
@@ -157,7 +157,7 @@ const Skill = () => {
                     <div className="text-xl font-rem flexStart">
                         Tools
                     </div>
-                    <div className='flex gap-4 mt-5' >
+                    <div className='flex gap-4 mt-5 flex-wrap' >
                         {
                             tools.map((item, index) => {
                                 return (
