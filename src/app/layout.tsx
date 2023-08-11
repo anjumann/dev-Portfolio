@@ -8,7 +8,7 @@ import localFont from 'next/font/local'
 
 const inter = Inter({ subsets: ['latin'] })
 const borel = localFont({ src: '../fonts/Borel-Regular.ttf', variable:'--font-borel' }) 
-
+const rem = localFont({src:'../fonts/Rem.ttf', variable:'--font-rem'})
 
 export const metadata: Metadata = {
   title: 'Anjuman - Portfolio',
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${borel.variable}  ${inter.className}`} >
+      <body className={`${borel.variable} ${rem.variable} ${inter.className}`} >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar/>
           {children}

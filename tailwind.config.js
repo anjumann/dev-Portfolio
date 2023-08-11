@@ -72,6 +72,7 @@ module.exports = {
       },
       fontFamily: {
         borel : ["var(--font-borel)"],
+        rem : ["var(--font-rem)"],
       }
     },
   },

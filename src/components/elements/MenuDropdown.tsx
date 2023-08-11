@@ -18,8 +18,8 @@
     return (
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="outline" size="icon" className='border-0 text-2xl' >
-            <GiHamburgerMenu clasName='' />
+          <Button variant="outline" size="icon" className='border-0 ' >
+            <GiHamburgerMenu className='text-2xl' />
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-56">
