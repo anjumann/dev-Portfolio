@@ -6,7 +6,8 @@ const Projects = () => {
     return (
         <div className='screen-width grid grid-cols-1 md:grid-cols-5 mt-20  ' >
             <div className="relative">
-                <div className="section-heading">
+                <div
+                 className="section-heading">
                     My Work
                 </div>
             </div>

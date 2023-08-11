@@ -5,10 +5,11 @@ import { ThemeProvider } from "@/components/theme-provider"
 import Navbar from '@/components/Navbar'
 
 import localFont from 'next/font/local'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
-const borel = localFont({ src: '../fonts/Borel-Regular.ttf', variable:'--font-borel' }) 
-const rem = localFont({src:'../fonts/Rem.ttf', variable:'--font-rem'})
+const borel = localFont({ src: '../fonts/Borel-Regular.ttf', variable: '--font-borel' })
+const rem = localFont({ src: '../fonts/Rem.ttf', variable: '--font-rem' })
 
 export const metadata: Metadata = {
   title: 'Anjuman - Portfolio',
@@ -25,8 +26,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${borel.variable} ${rem.variable} ${inter.className}`} >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Navbar/>
-          {children}
+          
+            <Navbar />
+            {children}
+            <Footer />
         </ThemeProvider>
       </body>
     </html>

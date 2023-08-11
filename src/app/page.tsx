@@ -1,4 +1,5 @@
 import About from "@/components/home/About";
+import Contact from "@/components/home/Contact";
 import Hero from "@/components/home/Hero";
 import Projects from "@/components/home/Projects";
 import Skill from "@/components/home/Skill";
@@ -21,6 +22,9 @@ export default function Home() {
       </div>
       <div className="">
         <Social />
+      </div>
+      <div className="">
+        <Contact />
       </div>
     </>
   )
