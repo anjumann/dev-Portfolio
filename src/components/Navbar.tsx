@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <>
         <div className="flex flex-row justify-between items-center px-20 pt-4">
-            <div className=""> Anjuman Raj </div>
+            <div className=" font-borel text-2xl "> Anjuman raj </div>
             <div className="flex flex-row gap-2">
                 <div className="">
                     <ModeToggle/>
