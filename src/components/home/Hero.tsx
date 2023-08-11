@@ -6,12 +6,12 @@ import { FaLongArrowAltRight } from 'react-icons/fa'
 
 const Hero = () => {
     return (
-        <div className='screen-width mt-10 grid grid-rows-2 md:grid-cols-2' >
-            <div className="flex flex-col w-full justify-start items-start py-8 mt-6">
-                <h1 className="text-3xl md:text-5xl py-2 text-yellow-300 tracking-loose font-borel ">Anjuman Raj</h1>
-                <h2 className="text-xl md:text-xl leading-relaxed md:leading-snug mb-2 font-rem ">
+        <div className='screen-width mt-10 grid lg:grid-cols-2 lg:grid-rows-1  ' >
+            <div className="flex flex-col w-full justify-center text-center md:text-left md:justify-start items-start py-8 mt-6">
+                <h1 className="text-3xl md:text-5xl py-2 text-yellow-300 tracking-loose font-borel w-fit   ">Anjuman raj</h1>
+                <h1 className="text-xl md:text-xl leading-relaxed md:leading-snug mb-2 font-rem ">
                     Crafting Digital Experiences Through Code: Where Pixels and Passion Converge.
-                </h2>
+                </h1>
 
                 {/* <Link href="/"
                     className="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent mt-4">
@@ -25,8 +25,8 @@ const Hero = () => {
                     </Button>
                 </div>
             </div>
-            <div className=" flexCenter">
-                <Image src='/images/anjuman.png' width={300} height={700} alt='ofc my pic' />
+            <div className=" flex justify-end  ">
+                <Image src='/images/sky.jpg' width={300} height={700} alt='ofc my pic' className='rounded-full' />
             </div>
         </div>
     )

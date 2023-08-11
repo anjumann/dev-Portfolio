@@ -82,3 +82,8 @@
 .flexCenter{
   @apply flex justify-center items-center;
 }
+
+.flexStart{
+  @apply flex justify-start items-start;
+}
+
