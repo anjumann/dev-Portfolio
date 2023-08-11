@@ -22,7 +22,7 @@ import { useToast } from "@/components/ui/use-toast"
 
 
 const formSchema = z.object({
-    username: z.string().min(2, {
+    name: z.string().min(2, {
         message: "Username must be at least 2 characters.",
     }),
     message: z.string().min(2, {
@@ -38,26 +38,23 @@ const ContactForm = () => {
     const { toast } = useToast()
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
-        defaultValues: {
-            username: "",
-        },
     })
 
     function onSubmit(values: z.infer<typeof formSchema>) {
-        // Do something with the form values.
-        // ✅ This will be type-safe and validated.
+
         console.log(values)
         toast({
-            title: "Scheduled: Catch up",
-            description: "Friday, February 10, 2023 at 5:57 PM",
-          })
+            title: "Sent: Message Sent to the Anjuman.",
+            description: "Soon I will be contact you.",
+        })
+        
     }
     return (
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
                 <FormField
                     control={form.control}
-                    name="username"
+                    name="name"
                     render={({ field }) => (
                         <>
                             <FormItem>
