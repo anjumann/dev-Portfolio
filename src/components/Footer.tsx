@@ -3,12 +3,12 @@ import ModeToggle from './elements/ModeToggle'
 
 const Footer = () => {
     return (
-        <div className="flex flex-row justify-between items-center px-2 md:px-10 lg:px-20 pt-4">
-            <div className=" font-borel text-2xl "> anjuman raj </div>
-            <div className="font-rem">
+        <div className="flex flex-row justify-between items-center px-2 md:px-10 lg:px-20 py-2 mt-10 border-t-2">
+            <div className=" font-borel text-sm "> anjuman raj </div>
+            <div className="font-rem text-sm">
                 Just a simple footer resting here
             </div>
-            <div className="flex flex-row gap-x-4">
+            <div className="flex flex-row gap-x-4 text-sm">
                 <div className="">
                     <ModeToggle />
                 </div>

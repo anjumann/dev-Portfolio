@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { useToast } from "@/components/ui/use-toast"
 
 
 
@@ -34,7 +35,7 @@ const formSchema = z.object({
 
 
 const ContactForm = () => {
-
+    const { toast } = useToast()
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -46,6 +47,10 @@ const ContactForm = () => {
         // Do something with the form values.
         // ✅ This will be type-safe and validated.
         console.log(values)
+        toast({
+            title: "Scheduled: Catch up",
+            description: "Friday, February 10, 2023 at 5:57 PM",
+          })
     }
     return (
         <Form {...form}>

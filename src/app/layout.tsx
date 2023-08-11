@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from "@/components/theme-provider"
 import Navbar from '@/components/Navbar'
-
+import { Toaster } from "@/components/ui/toaster"
 import localFont from 'next/font/local'
 import Footer from '@/components/Footer'
 
@@ -30,6 +30,7 @@ export default function RootLayout({
             <Navbar />
             {children}
             <Footer />
+            <Toaster />
         </ThemeProvider>
       </body>
     </html>
