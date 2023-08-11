@@ -13,16 +13,17 @@ const Hero = () => {
                     Crafting Digital Experiences Through Code: Where Pixels and Passion Converge.
                 </h1>
 
-                {/* <Link href="/"
-                    className="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent mt-4">
-                    Explore Now</Link> */}
                 <div className="mt-10 flex flex-row gap-x-4 w-fit mx-auto lg:mx-0">
-                    <Button variant="outline" className='group  ' > myProjects
-                        <FaLongArrowAltRight className=" group-hover:translate-x-1 ml-2 transition-all duration-200 ease-in-out" />
-                    </Button>
-                    <Button variant="outline" className='group  ' > myContact
-                        <FaLongArrowAltRight className=" group-hover:translate-x-1 ml-2 transition-all duration-200 ease-in-out" />
-                    </Button>
+                    <Link href='/#projects' >
+                        <Button variant="outline" className='group  ' > myProjects
+                            <FaLongArrowAltRight className=" group-hover:translate-x-1 ml-2 transition-all duration-200 ease-in-out" />
+                        </Button>
+                    </Link>
+                    <Link href='/resume.pdf' >
+                        <Button variant="outline" className='group  ' > Resume
+                            <FaLongArrowAltRight className=" group-hover:translate-x-1 ml-2 transition-all duration-200 ease-in-out" />
+                        </Button>
+                    </Link>
                 </div>
             </div>
             <div className=" flex justify-center lg:justify-end  ">

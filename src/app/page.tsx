@@ -4,6 +4,7 @@ import Hero from "@/components/home/Hero";
 import Projects from "@/components/home/Projects";
 import Skill from "@/components/home/Skill";
 import Social from "@/components/home/Social";
+import Work from "@/components/home/Work";
 
 export default function Home() {
   return (
@@ -21,11 +22,14 @@ export default function Home() {
         <Projects />
       </div>
       <div className="">
-        <Social />
+        <Work />
       </div>
       <div className="">
-        <Contact />
+        <Social />
       </div>
+      {/* <div className="">
+        <Contact />
+      </div> */}
     </>
   )
 }
