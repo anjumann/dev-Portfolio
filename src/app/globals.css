@@ -87,3 +87,6 @@
   @apply flex justify-start items-start;
 }
 
+.section-heading{
+  @apply text-xl font-rem flexStart sticky top-0  w-fit mx-auto lg:mx-0
+}
