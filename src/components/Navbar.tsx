@@ -12,7 +12,7 @@ const Navbar = () => {
                     <ModeToggle/>
                 </div>
                 <div className="">
-                    <MenuDropdown/>
+                    {/* <MenuDropdown/> */}
                 </div>
             </div>
         </div>
