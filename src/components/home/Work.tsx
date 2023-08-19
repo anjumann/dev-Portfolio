@@ -39,7 +39,7 @@ const Work = () => {
                     My Work Experience
                 </div>
             </div>
-            <div className=" py-2 px-6 col-span-4 font-rem text-justify space-y-8 ">
+            <div className=" py-2 px-6 col-span-4 font-rem text-justify space-y-8 place-content-center md:place-content-start ">
                 {
                     experience.map((item, index) => {
                         return (

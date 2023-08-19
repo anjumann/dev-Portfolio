@@ -79,7 +79,7 @@ const Projects = () => {
                 {
                     ProjectList.map((project, index) => {
                         return (
-                            <div className="grid grid-rows-2 md:grid-cols-4" key={index}>
+                            <div className="grid grid-rows-2 md:grid-cols-4 gap-x-3 place-content-center md:place-content-start h-fit" key={index}>
                                 <div className="text-xl font-rem flexStart">
                                     <Image src={`/projects/${project.image}`} alt="nextjs" width={300} height={300} className='rounded-lg' />
                                 </div>
