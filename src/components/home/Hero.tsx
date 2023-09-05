@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import { Button } from '../ui/button'
 import { FaLongArrowAltRight } from 'react-icons/fa'
+import SocialLinks from '../SocialLinks'
 
 const Hero = () => {
     return (
@@ -24,6 +25,9 @@ const Hero = () => {
                             <FaLongArrowAltRight className=" group-hover:translate-x-1 ml-2 transition-all duration-200 ease-in-out" />
                         </Button>
                     </Link>
+                </div>
+                <div className='mt-5 w-fit mx-auto lg:mx-2' >
+                    <SocialLinks />
                 </div>
             </div>
             <div className=" flex justify-center lg:justify-end   ">

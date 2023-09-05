@@ -1,6 +1,7 @@
 import React from 'react'
 import ModeToggle from './elements/ModeToggle'
 import MenuDropdown from './elements/MenuDropdown'
+import SocialLinks from './SocialLinks'
 
 const Navbar = () => {
   return (
@@ -9,11 +10,12 @@ const Navbar = () => {
             <div className=" font-borel text-2xl "> anjuman raj </div>
             <div className="flex flex-row gap-x-4">
                 <div className="">
-                    <ModeToggle/>
+                    <SocialLinks/>
                 </div>
                 <div className="">
-                    {/* <MenuDropdown/> */}
+                    <ModeToggle/>
                 </div>
+                
             </div>
         </div>
     </>

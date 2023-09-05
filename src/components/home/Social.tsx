@@ -42,9 +42,6 @@ const Social = () => {
                         </div>
                     )
                 })}
-
-
-
             </div>
         </div>
     )

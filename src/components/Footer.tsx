@@ -1,5 +1,6 @@
 import React from 'react'
 import ModeToggle from './elements/ModeToggle'
+import SocialLinks from './SocialLinks'
 
 const Footer = () => {
     return (
@@ -9,6 +10,7 @@ const Footer = () => {
                 Just a simple footer resting here
             </div>
             <div className="flex flex-row gap-x-4 text-sm">
+                <SocialLinks />
                 <div className="">
                     <ModeToggle />
                 </div>
