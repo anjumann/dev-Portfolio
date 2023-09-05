@@ -20,7 +20,7 @@ const Hero = () => {
                             <FaLongArrowAltRight className=" group-hover:translate-x-1 ml-2 transition-all duration-200 ease-in-out" />
                         </Button>
                     </Link>
-                    <Link href='/resume.pdf' >
+                    <Link href='/resume' >
                         <Button variant="outline" className='group  ' > Resume
                             <FaLongArrowAltRight className=" group-hover:translate-x-1 ml-2 transition-all duration-200 ease-in-out" />
                         </Button>
