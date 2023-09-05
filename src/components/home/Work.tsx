@@ -26,7 +26,7 @@ const experience = [
         "duration": "Jul 2023 - Present · 2 mos",
         "description": {
             1: " Activily Developing Projects while collabrating with fellow members",
-            2: " Oragnising several Events and podcasts with help of this community",
+            2: " Build projects such as HacktivCode and Hacktive Blog ",
         }
     },
 ]

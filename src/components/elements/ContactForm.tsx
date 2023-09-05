@@ -41,7 +41,7 @@ const ContactForm = () => {
 
     const [loading, setLoading] = useState<boolean>(false)
 
-    const formRef = useRef<HTMLFormElement| null>(null)
+    const formRef = useRef<HTMLFormElement | null>(null)
     const { toast } = useToast()
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -51,13 +51,13 @@ const ContactForm = () => {
         setLoading(true)
         if (formRef.current) {
             await emailjs.sendForm('service_l2g3d0t', 'template_wwmqhx2', formRef.current, 'mIGuVwqvm9LV7HQ9s').then(
-                (res)=>{   
+                (res) => {
                     toast({
                         title: "🚀 Success! Your Message Has Been Sent!",
                         description: "🌐 Stay tuned for our reply, and in the spirit of code, let's keep the conversation binary - 0s and 1s. Your message is important to us, and we can't wait to connect with you ! - anjuman",
                     })
                 }
-            ).catch((error)=>{
+            ).catch((error) => {
                 console.log(error)
                 toast({
                     title: "😵 Error! Your Message Not Has Been Sent!",
@@ -82,10 +82,10 @@ const ContactForm = () => {
                             <FormItem>
                                 <FormLabel>Your Spotlight Alias</FormLabel>
                                 <FormControl>
-                                    <Input  placeholder="How shall we address you? 🌟" {...field} />
+                                    <Input placeholder="How shall we address you? 🌟" {...field} />
                                 </FormControl>
                                 <FormDescription>
-
+                                    Tech Persona
                                 </FormDescription>
                                 <FormMessage />
                             </FormItem>
@@ -128,9 +128,9 @@ const ContactForm = () => {
                         </>
                     )}
                 />
-                <Button variant="outline" disabled={loading} className={`${loading?'cursor-wait ':''}`} type="submit">
+                <Button variant="outline" disabled={loading} className={`${loading ? 'cursor-wait ' : ''}`} type="submit">
                     {
-                        loading? (<> <FiLoader className='animate-spin text-lg mr-2' /> Submitting... </>) : 'Submit'
+                        loading ? (<> <FiLoader className='animate-spin text-lg mr-2' /> Submitting... </>) : 'Submit'
                     }
                 </Button>
             </form>
