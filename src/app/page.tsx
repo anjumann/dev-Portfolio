@@ -27,9 +27,9 @@ export default function Home() {
       <div className="">
         <Social />
       </div>
-      {/* <div className="">
+      <div className="">
         <Contact />
-      </div> */}
+      </div>
     </>
   )
 }
