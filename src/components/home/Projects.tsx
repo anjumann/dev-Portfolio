@@ -7,7 +7,7 @@ const ProjectList = [
     {
         name: "INCRIDEA '22 OFFICIAL WEBSITE",
         github: "https://github.com/anjumann/Incridea22",
-        url: "",
+        url: "https://github.com/anjumann/Incridea22",
         description: [
             "Build to manage Students during the college fest.",
             "Used by 8000+ students from my college and other colleges"
