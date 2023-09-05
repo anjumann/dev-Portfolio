@@ -1,6 +1,5 @@
 import React from 'react'
 import ModeToggle from './elements/ModeToggle'
-import MenuDropdown from './elements/MenuDropdown'
 import SocialLinks from './SocialLinks'
 
 const Navbar = () => {
