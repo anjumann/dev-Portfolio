@@ -31,7 +31,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className=" flex justify-center lg:justify-end   ">
-                <Image src='/images/sky.jpg' width={300} height={700} alt='ofc my pic' className='rounded-full shadow-white  cursor-pointer ' />
+                <Image loading='eager' src='/images/sky.jpg' width={300} height={700} alt='ofc my pic' className='rounded-full shadow-white  cursor-pointer ' />
             </div>
         </div>
     )
