@@ -3,6 +3,7 @@ import React from 'react'
 import { FiGithub, FiLinkedin } from 'react-icons/fi'
 import { MdOutlineMail } from 'react-icons/md'
 
+
 const SocialLinks = () => {
 
     const iconClass = 'hover:scale-110 hover:-translate-y-1 transition-transform ease-in-out duration-200 '
@@ -36,9 +37,7 @@ const SocialLinks = () => {
                     </div>
                 )
             })}
-
-
-
+            
         </div>
     )
 }

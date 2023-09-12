@@ -1,8 +1,9 @@
+import { StarIcon } from '@radix-ui/react-icons'
 import Link from 'next/link'
 import React from 'react'
 import { FiGithub, FiLinkedin } from 'react-icons/fi'
 import { MdOutlineMail } from 'react-icons/md'
-
+import {AiOutlineStar} from 'react-icons/ai'
 
 const SocialLink = [
     {
@@ -19,6 +20,11 @@ const SocialLink = [
         name: 'Email - anjumanraj2@gmail.com',
         link: 'mailto:anjumanraj2@gmail.com',
         logo: <MdOutlineMail />
+    },
+    {
+        name: 'Please consider giving a star to this portfolio on GitHub.',
+        link: 'https://github.com/anjumann/dev-Portfolio',
+        logo: <AiOutlineStar  />
     },
 ]
 
