@@ -21,7 +21,7 @@ const Hero = () => {
                         </Button>
                     </Link>
                     <Link href='/resume' >
-                        <Button variant="outline" className='group  ' > Resume
+                        <Button variant="outline" className='group  ' > myRésumé 
                             <FaLongArrowAltRight className=" group-hover:translate-x-1 ml-2 transition-all duration-200 ease-in-out" />
                         </Button>
                     </Link>

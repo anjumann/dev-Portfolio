@@ -11,13 +11,13 @@ const page = () => {
                 <h1 className="text-3xl md:text-5xl py-2 text-yellow-300 tracking-loose font-borel  w-fit mx-auto lg:mx-0  ">my résumé  </h1>
 
                 <div className="mt-10 flex flex-row gap-x-4 w-fit mx-auto lg:mx-0">
-                    <Link href='/#projects' >
-                        <Button variant="outline" className='group  ' > myProjects
+                    <Link href='/#contact' >
+                        <Button variant="outline" className='group  ' > contactMe
                             <FaLongArrowAltRight className=" group-hover:translate-x-1 ml-2 transition-all duration-200 ease-in-out" />
                         </Button>
                     </Link>
                     <Link href='/' >
-                        <Button variant="outline" className='group  ' > Home
+                        <Button variant="outline" className='group  ' > home
                             <FaLongArrowAltRight className=" group-hover:translate-x-1 ml-2 transition-all duration-200 ease-in-out" />
                         </Button>
                     </Link>

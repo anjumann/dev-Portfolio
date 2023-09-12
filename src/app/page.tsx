@@ -27,7 +27,7 @@ export default function Home() {
       <div className="">
         <Social />
       </div>
-      <div className="">
+      <div className="" id="contact" >
         <Contact />
       </div>
     </>

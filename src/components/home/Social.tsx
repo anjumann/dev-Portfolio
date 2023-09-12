@@ -6,12 +6,12 @@ import { MdOutlineMail } from 'react-icons/md'
 
 const SocialLink = [
     {
-        name: 'Github',
+        name: 'Github - /anjumann',
         link: 'https://github.com/anjumann',
         logo: <FiGithub />
     },
     {
-        name: 'Linkedin',
+        name: 'Linkedin - /in/anjuman-raj/',
         link: 'https://www.linkedin.com/in/anjuman-raj/',
         logo: <FiLinkedin />
     },
