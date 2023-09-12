@@ -18,6 +18,16 @@ const frontend = [
         "logo": "tailwindcss-logo.png"
     },
     {
+        "name": "SCSS",
+        "color": "border-pink-500",
+        "logo": "tailwindcss-logo.png"
+    },
+    {
+        "name": "Famous UI Libraries",
+        "color": "border-blue-500",
+        "logo": "tailwindcss-logo.png"
+    },
+    {
         "name": "Framer Motion",
         "color": "border-blue-500",
         "logo": "framer-motion-logo.png"
@@ -59,9 +69,29 @@ const backend = [
         "logo": "nodejs_logo.png"
     },
     {
+        "name": "PostgreSQL",
+        "color": "border-blue-700",
+        "logo": "postgreSql_logo.png"
+    },
+    {
+        "name": "MongoDB",
+        "color": "border-green-700",
+        "logo": "mongodb_logo.png"
+    },
+    {
+        "name": "Reddis",
+        "color": "border-red-500",
+        "logo": "mongodb_logo.png"
+    },
+    {
         "name": "Firebase",
         "color": "border-yellow-300",
         "logo": "firebase_logo.png"
+    },
+    {
+        "name": "WebSocket",
+        "color": "border-blue-300",
+        "logo": "websocket_logo.png"
     },
     {
         "name": "GraphQL",
@@ -89,6 +119,11 @@ const tools = [
     {
         "name": "Docker",
         "color": "border-blue-500",
+        "logo": "docker-logo.png"
+    },
+    {
+        "name": "Kubernates",
+        "color": "border-blue-700",
         "logo": "docker-logo.png"
     },
     {
@@ -127,8 +162,8 @@ const Skill = () => {
                 <div className="">
                     <div className="text-xl font-rem flexStart">
                         Backend
-                    </div>  
-                    <div className='flex gap-4 mt-5 flex-wrap' >
+                    </div>
+                    <div className='flex gap-4 mt-5 flex-wrap lg:w-1/2' >
                         {
                             backend.map((item, index) => {
                                 return (
