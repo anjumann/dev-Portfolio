@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { FiGithub, FiLinkedin } from 'react-icons/fi'
 import { MdOutlineMail } from 'react-icons/md'
-
+import {AiOutlineStar} from 'react-icons/ai'
 
 const SocialLinks = () => {
 
@@ -19,9 +19,14 @@ const SocialLinks = () => {
             logo: <FiLinkedin className={iconClass} />
         },
         {
-            name: 'Email - anjumanraj2@gmail.com',
+            name: 'Email',
             link: 'mailto:anjumanraj2@gmail.com',
             logo: <MdOutlineMail className={iconClass} />
+        },
+        {
+            name: 'Github',
+            link: 'https://github.com/anjumann/dev-Portfolio',
+            logo: <AiOutlineStar className={iconClass} />
         },
     ]
     return (
