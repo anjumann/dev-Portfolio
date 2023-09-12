@@ -8,7 +8,7 @@ const page = () => {
     return (
         <div className='min-h-screen w-fit mx-auto my-14' >
             <div className="my-14">
-                <h1 className="text-3xl md:text-5xl py-2 text-yellow-300 tracking-loose font-borel  w-fit mx-auto lg:mx-0  ">My Resume </h1>
+                <h1 className="text-3xl md:text-5xl py-2 text-yellow-300 tracking-loose font-borel  w-fit mx-auto lg:mx-0  ">my résumé  </h1>
 
                 <div className="mt-10 flex flex-row gap-x-4 w-fit mx-auto lg:mx-0">
                     <Link href='/#projects' >
