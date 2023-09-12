@@ -130,7 +130,7 @@ const ContactForm = () => {
                 />
                 <Button variant="outline" disabled={loading} className={`${loading ? 'cursor-wait ' : ''}`} type="submit">
                     {
-                        loading ? (<> <FiLoader className='animate-spin text-lg mr-2' /> Submitting... </>) : 'Submit'
+                        loading ? (<> <FiLoader className='animate-spin text-lg mr-2' /> Sending... </>) : 'Send'
                     }
                 </Button>
             </form>

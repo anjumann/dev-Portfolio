@@ -3,6 +3,13 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import React from 'react'
 import { FaLongArrowAltRight } from 'react-icons/fa'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Anjuman - Resume',
+    description: "Anjuman Raj's Resume",
+  }
+
 
 const page = () => {
     return (
