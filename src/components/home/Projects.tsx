@@ -91,7 +91,7 @@ const Projects = () => {
                         return (
                             <div className="grid grid-rows-2 md:grid-cols-4 gap-x-3 place-content-center md:place-content-start h-fit group " key={index}>
                                 <div className="text-xl font-rem flexStart">
-                                    <Image src={`/projects/${project.image}`} alt="nextjs" width={300} height={300} className='rounded-lg grayscale group-hover:filter-none group-hover:scale-110 transition-all duration-200 ease-in-out ' />
+                                    <Image src={`/projects/${project.image}`} alt="nextjs" width={300} height={300} className='rounded-lg md:grayscale group-hover:filter-none group-hover:scale-110 transition-all duration-200 ease-in-out ' />
                                 </div>
                                 <div className='px-3 md:col-span-3'>
                                     <h3>
