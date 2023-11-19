@@ -19,10 +19,10 @@ export default function Home() {
         <Skill />
       </div>
       <div className="">
-        <Projects />
+        <Work />
       </div>
       <div className="">
-        <Work />
+        <Projects />
       </div>
       <div className="">
         <Social />
