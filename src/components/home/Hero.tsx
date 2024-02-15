@@ -30,9 +30,9 @@ const Hero = () => {
                     <SocialLinks />
                 </div>
             </div>
-            <div className=" flex justify-center lg:justify-end   ">
-                <Image loading='eager' src='/images/anjuman.png' width={300} height={700} alt='ofc my pic' className='rounded-md shadow-white  cursor-pointer ' />
-            </div>
+            {/* <div className=" flex justify-center lg:justify-end   ">
+                <Image priority={true} src='/images/anjuman.png' width={300} height={700} alt='ofc my pic' className='rounded-md shadow-white  cursor-pointer ' />
+            </div> */}
         </div>
     )
 }

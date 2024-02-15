@@ -3,12 +3,12 @@ import React from 'react'
 
 const experience = [
     {
-        "position": "Frontend Web Developer",
-        "company": "Cantilever Labs · Internship",
-        "duration": "Jun 2023 - Jul 2023 · 2 mos",
+        "position": "Full Web Developer",
+        "company": "Barbarik AI · Fulltime Internship",
+        "duration": "Jan 2024 - Currently Working · 2 mos",
         "description": {
-            1: " I have build several Dashboard UI Components and SignIn Page.",
-            2: " Website is used by around 17k people.",
+            1: "Building an Incredible AI copilot for Financial Teams",
+            2: "React, Next, TypeScript, Python, and more.",
         }
     },
     {
@@ -26,7 +26,7 @@ const experience = [
         "duration": "Jul 2023 - Present · 2 mos",
         "description": {
             1: " Activily Developing Projects while collabrating with fellow members",
-            2: " Build projects such as HacktivCode and Hacktive Blog ",
+            2: " Built projects such as HacktivCode and Hacktive Blog ",
         }
     },
 ]

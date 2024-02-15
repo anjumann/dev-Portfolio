@@ -5,75 +5,14 @@ import Link from 'next/link'
 
 const ProjectList = [
     {
-        name: "INCRIDEA '22 OFFICIAL WEBSITE",
-        github: "https://github.com/anjumann/Incridea22",
-        url: "https://github.com/anjumann/Incridea22",
+        name: "Barbarik Landing Page",
+        github: "",
+        url: "https://www.barbarik.ai/",
         description: [
-            "Build to manage Students during the college fest.",
-            "Used by 8000+ students from my college and other colleges"
+            "Built a landing page for a startup company",
         ],
-        image: 'incridea.png'
+        image: 'barbarik.png'
     },
-    {
-        name: "This Portfolio",
-        github: "https://github.com/anjumann/dev-Portfolio",
-        url: "http://anjuman.site/",
-        description: [
-            "My portfolio build using NextJs 13",
-        ],
-        image: 'portfolio-new.png'
-
-    },
-    {
-        name: "HacktivCode",
-        github: "https://github.com/anjumann/hacktivcode",
-        url: "https://hacktivcode.site/",
-        description: [
-            "AI powered Chatbot for coders",
-        ],
-        image: 'hacktivcode.png'
-
-    },
-    {
-        name: "HyperLoom",
-        github: "https://github.com/anjumann/HyperLoom",
-        url: "https://hyperloom.anjuman.site/",
-        description: [
-            "UI for HyperLoom",
-        ],
-        image: 'hyperloom.png'
-
-    },
-    {
-        name: "TechExhibit",
-        github: "https://github.com/anjumann/TechExhibit",
-        url: "https://tech-exhibit.vercel.app/",
-        description: [
-            "E commerce website for tech products (under-contruction) ",
-        ],
-        image: 'techexihibit.png'
-    },
-    {
-        name: "Finite Loop",
-        github: "https://github.com/anjumann/resumeBuilder",
-        url: "https://github.com/anjumann/resumeBuilder",
-        description: [
-            "Developed using MERN Stack.",
-            "Build to Manage and interact with club members.",
-            "Used for 150+ Members of club."
-        ],
-        image: 'finiteloop.png'
-    },
-    // {
-    //     name: "Resume Builder",
-    //     github: "https://github.com/anjumann/resumeBuilder",
-    //     url: "https://github.com/anjumann/resumeBuilder",
-    //     description: [
-    //         "Resume builder ",
-    //     ],
-    //     image:''
-    // },
-
 ]
 
 const Projects = () => {
@@ -104,19 +43,28 @@ const Projects = () => {
                                     </ul>
 
                                     <div className="flex flex-wrap  gap-3 mt-5">
-                                        <Link href={project.github} target='_blank' >
-                                            <Button variant='outline'  >
-                                                projectGithub
-                                            </Button>
-                                        </Link>
-                                        <Link href={project.url} target='_blank'>
-                                            <Button variant='outline'  >
-                                                projectLink
-                                            </Button>
-                                        </Link>
+                                        {
+                                            project.github && (
+                                                <Link href={project.github} target='_blank' >
+                                                    <Button variant='outline'  >
+                                                        projectGithub
+                                                    </Button>
+                                                </Link>
+                                            )
+                                        }
+                                        {
+                                            project.url && (
+                                                <Link href={project.url} target='_blank'>
+                                                    <Button variant='outline'  >
+                                                        projectLink
+                                                    </Button>
+                                                </Link>
+                                            )
+                                        }
+
                                     </div>
                                 </div>
-                            </div>
+                            </div>  
                         )
                     })
                 }
