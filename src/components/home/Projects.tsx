@@ -11,7 +11,7 @@ const ProjectList = [
         description: [
             "Built a landing page for a startup company",
         ],
-        image: 'barbarik.png'
+        image: 'Barbarik.png'
     },
 ]
 
