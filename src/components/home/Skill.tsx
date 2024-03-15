@@ -122,7 +122,7 @@ const tools = [
         "logo": "docker-logo.png"
     },
     {
-        "name": "Kubernates",
+        "name": "kubernetes",
         "color": "border-blue-700",
         "logo": "docker-logo.png"
     },
