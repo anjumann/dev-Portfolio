@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${borel.variable} ${rem.variable} ${inter.className}`} >
+      <body className={`${borel.variable} ${rem.variable} ${inter.className} overflow-x-hidden`} >
         <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange enableSystem>
             <Navbar />
             {children}
