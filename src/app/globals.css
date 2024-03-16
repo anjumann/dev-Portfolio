@@ -68,12 +68,12 @@
 
 :root {
   @apply antialiased;
-  
 }
+
  
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border transition-all duration-75 ease-in-out ;
   }
   body {
     @apply bg-background text-foreground;
