@@ -68,8 +68,12 @@
 
 :root {
   @apply antialiased;
+  scrollbar-width: none;
 }
-
+/* firefox */
+:root::-webkit-scrollbar {
+  display: none;
+}
  
 @layer base {
   * {
@@ -87,6 +91,8 @@ html {
 [data-scroll-container] {
   perspective: 999999px !important;
 }
+
+
 
 
 .screen-width{

@@ -7,7 +7,6 @@ import { Toaster } from "@/components/ui/toaster"
 import localFont from 'next/font/local'
 import Footer from '@/components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
 const borel = localFont({ src: '../fonts/Borel-Regular.ttf', variable: '--font-borel' })
 const rem = localFont({ src: '../fonts/Rem.ttf', variable: '--font-rem' })
 
@@ -23,13 +22,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${borel.variable} ${rem.variable} ${inter.className} overflow-x-hidden`} >
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${borel.variable} ${rem.variable} overflow-x-hidden  `} >
         <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange enableSystem>
-            <Navbar />
-            {children}
-            <Footer />
-            <Toaster />
+          <Navbar />
+          {children}
+          <Footer />
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
