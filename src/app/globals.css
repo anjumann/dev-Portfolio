@@ -80,7 +80,7 @@
     @apply border-border transition-all duration-75 ease-in-out ;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-black text-foreground;
   }
 }
 

@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar'
 import { Toaster } from "@/components/ui/toaster"
 import localFont from 'next/font/local'
 import Footer from '@/components/Footer'
+import StarsCanvas from '@/components/StarryBackground'
 
 const borel = localFont({ src: '../fonts/Borel-Regular.ttf', variable: '--font-borel' })
 const rem = localFont({ src: '../fonts/Rem.ttf', variable: '--font-rem' })
@@ -23,8 +24,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${borel.variable} ${rem.variable} overflow-x-hidden  `} >
+      <body className={`${borel.variable} ${rem.variable}  overflow-y-scroll overflow-x-hidden  `} >
         <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange enableSystem>
+        <StarsCanvas />
           <Navbar />
           {children}
           <Footer />
