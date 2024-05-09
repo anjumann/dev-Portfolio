@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div className='screen-width grid grid-cols-1 md:grid-cols-5 mt-20  ' >
+        <div className='screen-width grid grid-cols-1 md:grid-cols-5 mt-20 text-xl ' >
             <div className="relative">
                 <div className="section-heading">
                     About

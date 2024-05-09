@@ -22,6 +22,7 @@ import { useToast } from "@/components/ui/use-toast"
 import { FiLoader } from 'react-icons/fi'
 import { ToastAction } from '../ui/toast'
 import Link from 'next/link'
+import Error from 'next/error'
 
 
 const formSchema = z.object({
@@ -36,6 +37,9 @@ const formSchema = z.object({
     })
 })
 
+const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID || ""
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID || ""
+const PUBLIC_ID = process.env.NEXT_PUBLIC_PUBLIC_ID || ""
 
 const ContactForm = () => {
 
@@ -49,42 +53,56 @@ const ContactForm = () => {
 
     async function onSubmit(values: z.infer<typeof formSchema>) {
         setLoading(true)
-        if (formRef.current) {
-            await emailjs.sendForm('service_l2g3d0t', 'template_wwmqhx2', formRef.current, 'mIGuVwqvm9LV7HQ9s').then(
-                (res) => {
-                    toast({
-                        title: "🚀 Success! Your Message Has Been Sent!",
-                        description: "🌐 Stay tuned for our reply, and in the spirit of code, let's keep the conversation binary - 0s and 1s. Your message is important to us, and we can't wait to connect with you ! - anjuman",
-                    })
-                }
-            ).catch((error) => {
-                console.log(error)
-                toast({
-                    title: "😵 Error! Your Message Not Has Been Sent!",
-                    description: "🌐 Please Try again if Problem persist contact me through email or other social media! - anjuman",
-                    action: <Link href='mailto:anjumanraj2@gmail.com' > <ToastAction altText="Email">Send Email</ToastAction>,</Link>
-                })
-            })
-            formRef.current.reset()
-            form.reset()
+        try {
 
+            if (formRef.current) {
+                await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_ID).then(
+                    (res) => {
+                        console.log(res)
+                        toast({
+                            title: "🚀 Success! Your Message Has Been Sent!",
+                            description: "🌐 Stay tuned for our reply, and in the spirit of code, let's keep the conversation binary - 0s and 1s. Your message is important to us, and we can't wait to connect with you ! - anjuman",
+                        })
+                    }
+                ).catch((error) => {
+                    console.log(error)
+                    toast({
+                        title: "😵 Error! Your Message Not Has Been Sent! 1",
+                        description: "🌐 Please Try again if Problem persist contact me through email or other social media! - anjuman",
+                        action: <Link href='mailto:anjumanraj2@gmail.com' > <ToastAction altText="Email">Send Email</ToastAction>,</Link>
+                    })
+
+                })
+                formRef.current.reset()
+                form.reset()
+            }
+        } catch (e) {
+            console.log(e)
+            toast({
+                title: "😵 Error! Your Message Not Has Been Sent! 2",
+                description: "🌐 Please Try again if Problem persist contact me through email or other social media! - anjuman",
+                action: <Link href='mailto:anjumanraj2@gmail.com' > <ToastAction altText="Email">Send Email</ToastAction>,</Link>
+            })
+        }
+        finally {
+            setLoading(false);
         }
         setLoading(false)
     }
     return (
-        <Form {...form}>
-            <form ref={formRef} onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        <Form {...form}  >
+            <form ref={formRef} onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 ">
                 <FormField
                     control={form.control}
                     name="name"
                     render={({ field }) => (
                         <>
                             <FormItem>
-                                <FormLabel>Your Spotlight Alias</FormLabel>
+                                <FormLabel className="text-xl" >Your Spotlight Alias</FormLabel>
                                 <FormControl>
                                     <Input placeholder="How shall we address you? 🌟" {...field} />
                                 </FormControl>
-                                <FormDescription>
+                                <FormDescription className="text-sm" >
                                     Tech Persona
                                 </FormDescription>
                                 <FormMessage />
@@ -98,11 +116,11 @@ const ContactForm = () => {
                     render={({ field }) => (
                         <>
                             <FormItem>
-                                <FormLabel>Email Address</FormLabel>
+                                <FormLabel className="text-xl" >Email Address</FormLabel>
                                 <FormControl>
                                     <Input placeholder="Email (so I can get back to you) 🌌" {...field} />
                                 </FormControl>
-                                <FormDescription>
+                                <FormDescription className="text-sm" >
                                     Your Enchanted Email Address 🗝️
                                 </FormDescription>
                                 <FormMessage />
@@ -116,11 +134,11 @@ const ContactForm = () => {
                     render={({ field }) => (
                         <>
                             <FormItem>
-                                <FormLabel>Message</FormLabel>
+                                <FormLabel className="text-xl" >Message</FormLabel>
                                 <FormControl>
                                     <Textarea placeholder="Craft Your Message Canvas 🎨" {...field} />
                                 </FormControl>
-                                <FormDescription>
+                                <FormDescription className="text-sm" >
                                     Share Your Tech Thoughts and Queries 💬
                                 </FormDescription>
                                 <FormMessage />

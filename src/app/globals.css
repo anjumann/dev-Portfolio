@@ -80,7 +80,7 @@
     @apply border-border transition-all duration-75 ease-in-out ;
   }
   body {
-    @apply bg-[#030014] text-foreground;
+    @apply bg-[#cfc7ff] dark:bg-[#030014] text-foreground;
   }
 }
 
@@ -108,5 +108,5 @@ html {
 }
 
 .section-heading{
-  @apply text-xl font-rem flexStart sticky top-0  w-fit mx-auto lg:mx-0 mb-10
+  @apply text-2xl font-semibold font-rem flexStart sticky top-0  w-fit mx-auto lg:mx-0 mb-10
 }

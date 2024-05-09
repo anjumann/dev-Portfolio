@@ -5,8 +5,11 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 // @ts-ignore
 import * as random from "maath/random/dist/maath-random.esm";
+import { useTheme } from "next-themes";
 
 const StarryBackground = (props: any) => {
+  const { theme } = useTheme();
+
   const ref: any = useRef();
   const [sphere] = useState(() =>
     random.inSphere(new Float32Array(5000), { radius: 1.2 })
@@ -29,7 +32,7 @@ const StarryBackground = (props: any) => {
         >
             <PointMaterial
                 transparent
-                color="$fff"
+                color={`${theme === "dark" ? "#fff" : "#000" }`}
                 size={0.002}
                 sizeAttenuation={true}
                 dethWrite={false}

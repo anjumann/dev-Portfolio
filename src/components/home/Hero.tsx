@@ -9,7 +9,7 @@ const Hero = () => {
     return (
         <div className='screen-width mt-10 grid grid-rows-2 grid-cols-1 lg:grid-cols-2 lg:grid-rows-1  ' >
             <div className="flex flex-col w-full justify-center text-center md:text-left md:justify-start items-start py-8 mt-6">
-                <h1 className="text-3xl md:text-5xl py-2 dark:text-yellow-300 text-yellow-500 tracking-loose font-borel  w-fit mx-auto lg:mx-0  ">anjuman raj</h1>
+                <h1 className="text-4xl md:text-7xl py-2 dark:text-yellow-300 text-yellow-500 tracking-loose font-borel  w-fit mx-auto lg:mx-0  ">anjuman raj</h1>
                 <h1 className="text-xl md:text-xl leading-relaxed md:leading-snug mb-2 font-rem ">
                     Crafting Digital Experiences Through Code: Where Pixels and Passion Converge.
                 </h1>
