@@ -5,7 +5,7 @@ const experience = [
     {
         "position": "Full Web Developer",
         "company": "Barbarik AI · Fulltime Internship",
-        "duration": "Jan 2024 - Currently Working · 2 mos",
+        "duration": "Jan 2024 - Apr 2024 · 4 mons",
         "description": {
             1: "Building an Incredible AI copilot for Financial Teams",
             2: "React, Next, TypeScript, Python, and more.",
@@ -14,7 +14,7 @@ const experience = [
     {
         "position": "Web Development Intern",
         "company": "PlotMyData · Internship",
-        "duration": "Aug 2022 - Sep 2022 · 2 mos",
+        "duration": "Aug 2022 - Sep 2022 · 2 mons",
         "description": {
             1: " Develop visualizations with React.js & d3.js framework",
             2: " Designing of web application with the help of React.js, Tailwind",
@@ -23,7 +23,7 @@ const experience = [
     {
         "position": "Web Lead ",
         "company": "HacktivSpace Community · Community",
-        "duration": "Jul 2023 - Present · 2 mos",
+        "duration": "Jul 2023 - Present ",
         "description": {
             1: " Activily Developing Projects while collabrating with fellow members",
             2: " Built projects such as HacktivCode and Hacktive Blog ",

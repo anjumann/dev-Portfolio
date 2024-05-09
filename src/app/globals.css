@@ -80,7 +80,7 @@
     @apply border-border transition-all duration-75 ease-in-out ;
   }
   body {
-    @apply bg-[#cfc7ff] dark:bg-[#030014] text-foreground;
+    @apply bg-[#edeaff8e] dark:bg-[#030014] text-foreground;
   }
 }
 

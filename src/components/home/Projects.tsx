@@ -9,9 +9,45 @@ const ProjectList = [
         github: "",
         url: "https://www.barbarik.ai/",
         description: [
-            "Built a landing page for a startup company",
+            "Built a landing page for a startup company.",
         ],
         image: 'Barbarik.png'
+    },
+    {
+        name: "My Portfolio site",
+        github: "https://github.com/anjumann/dev-Portfolio",
+        url: "https://anjuman.site/",
+        description: [
+            "This portfolio Site.",
+        ],
+        image: 'portfolio-new.png'
+    },
+    {
+        name: "Incridea'22",
+        github: "https://github.com/anjumann/Incridea22",
+        url: "https://incridea.in/",
+        description: [
+            "A full stack application to handle Students during College Fest.",
+        ],
+        image: 'incridea.png'
+    },
+    {
+        name: "Finite Loop",
+        github: "https://github.com/anjumann/finiteLoop",
+        url: "https://www.finiteloop.co.in/",
+        description: [
+            "A full stack application to handle Students during College Fest.",
+        ],
+        image: 'finiteloop.png'
+    },
+    {
+        name: "Hacktive Code",
+        github: "https://github.com/anjumann/hacktivcode",
+        url: "https://hacktivcode.vercel.app/",
+        description: [
+            "An AI assistant to help with Code and logic.",
+        ],
+        image: 'hacktivcode.png'
     },
 ]
 
@@ -24,19 +60,19 @@ const Projects = () => {
                     My Work
                 </div>
             </div>
-            <div className=" py-2 px-6 col-span-4 font-rem text-justify space-y-6 ">
+            <div className=" py-2 px-6 col-span-4 font-rem text-justify">
                 {
                     ProjectList.map((project, index) => {
                         return (
                             <div className="grid grid-rows-2 md:grid-cols-4 gap-x-3 place-content-center md:place-content-start h-fit group " key={index}>
                                 <div className="text-xl font-rem flexStart">
-                                    <Image src={`/projects/${project.image}`} alt="nextjs" width={300} height={300} className='rounded-lg md:grayscale group-hover:filter-none group-hover:scale-110 transition-all duration-200 ease-in-out ' />
+                                    <Image src={`/projects/${project.image}`} alt="nextjs" width={300} height={300} className='rounded-lg  group-hover:filter-none group-hover:scale-110 transition-all duration-200 ease-in-out ' />
                                 </div>
                                 <div className='px-3 md:col-span-3'>
-                                    <h3>
+                                    <h3 className='text-lg font-medium' >
                                         {project.name}
                                     </h3>
-                                    <ul className='text-base font-thin mt-3' >
+                                    <ul className='text-base font-normal mt-3' >
                                         {project.description.map((item, itemIndex) => (
                                             <li key={itemIndex}>- {item}</li>
                                         ))}
