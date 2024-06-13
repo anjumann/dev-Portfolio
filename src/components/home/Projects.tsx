@@ -5,6 +5,15 @@ import Link from 'next/link'
 
 const ProjectList = [
     {
+        name: "QuadxCare",
+        github: "",
+        url: "https://www.quadxcare.com/home",
+        description: [
+            "Built a web-app to for a drone company which provide drone repair services.",
+        ],
+        image: 'quadxcare.png'
+    },
+    {
         name: "Barbarik Landing Page",
         github: "",
         url: "https://www.barbarik.ai/",

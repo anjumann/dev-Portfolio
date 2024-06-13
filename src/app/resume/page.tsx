@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 import { FaLongArrowAltRight } from 'react-icons/fa'
 import type { Metadata } from 'next'
+import PDFPreviewer from '@/components/PDFPreviewer'
 
 export const metadata: Metadata = {
     title: 'Anjuman - Resume',
@@ -33,7 +34,8 @@ const page = () => {
                     <SocialLinks />
                 </div>
             </div>
-            <iframe className=' w-[90vw] md:w-[60vw] h-[100vh] ' src="/resume.pdf" ></iframe>
+            {/* <iframe className=' w-[90vw] md:w-[60vw] h-[100vh] ' src="/resume.pdf" ></iframe> */}
+            <PDFPreviewer src="/resume.pdf" />
         </div>
     )
 }
