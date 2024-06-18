@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${borel.variable} ${rem.variable}  overflow-y-scroll overflow-x-hidden  `} >
         <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange enableSystem>
-        <StarsCanvas />
+        {/* <StarsCanvas /> */}
           <Navbar />
           {children}
           <Footer />

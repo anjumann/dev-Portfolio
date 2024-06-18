@@ -77,10 +77,10 @@
  
 @layer base {
   * {
-    @apply border-border transition-all duration-75 ease-in-out ;
+    @apply border-border transition-all duration-150 ease-in-out ;
   }
   body {
-    @apply bg-[#edeaff8e] dark:bg-[#030014] text-foreground;
+    @apply bg-[#dedbff8e] dark:bg-[#1a1a1a] text-foreground;
   }
 }
 
