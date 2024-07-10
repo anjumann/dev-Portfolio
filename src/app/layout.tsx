@@ -1,5 +1,5 @@
 import './globals.css'
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from "@/components/theme-provider"
 import Navbar from '@/components/Navbar'
@@ -14,7 +14,25 @@ const rem = localFont({ src: '../fonts/Rem.ttf', variable: '--font-rem' })
 export const metadata: Metadata = {
   title: 'Anjuman - Portfolio',
   description: '',
+  generator: "Next.js",
+  manifest: "/manifest.webmanifest",
+  keywords: ["nextjs", "nextjs13", "next13", "pwa", "next-pwa"],
+  authors: [
+    { name: "Anjuman Raj" },
+    {
+      name: "Anjuman raj",
+      url: "https://www.linkedin.com/in/anjuman-raj/",
+    },
+  ],
+  icons: [
+    { rel: "apple-touch-icon", url: "/icon-192x192.png" },
+    { rel: "icon", url: "/icon-192x192.png" },
+  ],
 }
+
+export const viewport: Viewport = {
+  themeColor: "#FFFFFF",
+};
 
 
 export default function RootLayout({
