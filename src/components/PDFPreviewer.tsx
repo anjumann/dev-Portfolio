@@ -12,13 +12,11 @@ const PDFPreviewer = (
     }
 ) => {
     return (
-        <>
-            <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
-                <div className="w-[90vw] md:w-[60vw] h-fit overflow-auto">
-                    <Viewer fileUrl={src} />
-                </div>
-            </Worker>
-        </>
+        <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
+            <div className="w-[90vw] md:w-[60vw] h-fit overflow-auto mx-auto">
+                <Viewer fileUrl={src} />
+            </div>
+        </Worker>
     )
 }
 

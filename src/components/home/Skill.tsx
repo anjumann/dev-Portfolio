@@ -33,7 +33,7 @@ const Skill = () => {
                     <div className="text-xl font-rem flexStart">
                         Backend
                     </div>
-                    <div className='flex gap-4 mt-5 flex-wrap lg:w-1/2' >
+                    <div className='flex gap-4 mt-5 flex-wrap ' >
                         {
                             techStack.backend.map((item, index) => {
                                 return (

@@ -24,14 +24,24 @@ const frontend = [
         "logo": "scss-logo.png"
     },
     {
-        "name": "Famous UI Libraries",
-        "color": "border-blue-500",
-        "logo": "ui-libraries-logo.png"
+        "name": "Shadcn/UI",
+        "color": "border-gray-500",
+        "logo": "scss-logo.png"
+    },
+    {
+        "name": "RadixUI",
+        "color": "border-gray-50",
+        "logo": "scss-logo.png"
     },
     {
         "name": "Framer Motion",
         "color": "border-blue-500",
         "logo": "framer-motion-logo.png"
+    },
+    {
+        "name": "Famous UI Libraries",
+        "color": "border-blue-500",
+        "logo": "ui-libraries-logo.png"
     }
 ];
 
@@ -90,6 +100,16 @@ const backend = [
         "logo": "firebase-logo.png"
     },
     {
+        "name": "Supabase",
+        "color": "border-emerald-600",
+        "logo": "firebase-logo.png"
+    },
+    {
+        "name": "Appwrite",
+        "color": "border-pink-600",
+        "logo": "graphql-logo.png"
+    },
+    {
         "name": "WebSocket",
         "color": "border-blue-300",
         "logo": "websocket-logo.png"
@@ -101,7 +121,7 @@ const backend = [
     },
     {
         "name": "Prisma",
-        "color": "border-green-500",
+        "color": "border-purple-700 ",
         "logo": "prisma-logo.png"
     }
 ];
@@ -121,11 +141,6 @@ const tools = [
         "name": "Docker",
         "color": "border-blue-500",
         "logo": "docker-logo.png"
-    },
-    {
-        "name": "Kubernetes",
-        "color": "border-blue-700",
-        "logo": "kubernetes-logo.png"
     },
     {
         "name": "Figma",

@@ -14,15 +14,6 @@ const ProjectList = [
         image: 'quadxcare.png'
     },
     {
-        name: "Sloth UI",
-        github: "https://github.com/anjumann/sloth-ui",
-        url: "https://sloth-ui.vercel.app/",
-        description: [
-            "A SaaS landing Page Template.",
-        ],
-        image: 'slothui.png'
-    },
-    {
         name: "Barbarik Landing Page",
         github: "",
         url: "https://www.barbarik.ai/",
@@ -39,6 +30,15 @@ const ProjectList = [
             "This portfolio Site.",
         ],
         image: 'portfolio-new.png'
+    },
+    {
+        name: "Sloth UI",
+        github: "https://github.com/anjumann/sloth-ui",
+        url: "https://sloth-ui.vercel.app/",
+        description: [
+            "A SaaS landing Page Template.",
+        ],
+        image: 'slothui.png'
     },
     {
         name: "Incridea'22",

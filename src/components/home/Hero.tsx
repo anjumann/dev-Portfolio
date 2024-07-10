@@ -30,9 +30,9 @@ const Hero = () => {
                     <SocialLinks />
                 </div>
             </div>
-            <div className=" flex justify-center lg:justify-end ">
-                <div className="w-fit overflow-hidden rounded-xl border-4 border-gray-600/40 dark:border-gray-200/40 p-1 ">
-                    <Image priority={true} src='/images/anjuman.png' width={300} height={700} alt='ofc my pic' className=' rounded-lg shadow-white hover:scale-125 cursor-pointer transition-all duration-500 ease-in-out ' />
+            <div className=" flex items-center justify-center lg:justify-end ">
+                <div className="w-fit h-fit overflow-hidden rounded-xl border-4 border-gray-600/40 dark:border-gray-200/40 p-1  ">
+                    <Image priority={true} src='/images/anjuman3.png' width={280} height={300} alt='ofc my pic' className=' rounded-lg shadow-white hover:scale-125 cursor-pointer transition-all duration-500 ease-in-out ' />
                 </div>
             </div>
         </div>
