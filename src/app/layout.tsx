@@ -12,18 +12,20 @@ const borel = localFont({ src: '../fonts/Borel-Regular.ttf', variable: '--font-b
 const rem = localFont({ src: '../fonts/Rem.ttf', variable: '--font-rem' })
 
 export const metadata: Metadata = {
+  applicationName : "Anjuman",
   title: 'Anjuman - Portfolio',
   description: '',
   generator: "Next.js",
-  manifest: "/manifest.webmanifest",
-  keywords: ["nextjs", "nextjs13", "next13", "pwa", "next-pwa"],
-  authors: [
-    { name: "Anjuman Raj" },
-    {
-      name: "Anjuman raj",
-      url: "https://www.linkedin.com/in/anjuman-raj/",
-    },
-  ],
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title:"Anjuman" ,
+    // startUpImage: [],
+  },
+  formatDetection: {
+    telephone: false,
+  },
   icons: [
     { rel: "apple-touch-icon", url: "/icon-192x192.png" },
     { rel: "icon", url: "/icon-192x192.png" },
