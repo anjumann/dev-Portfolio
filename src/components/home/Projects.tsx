@@ -10,6 +10,9 @@ const ProjectList = [
         url: "https://www.quadxcare.com/home",
         description: [
             "Built a web-app to for a drone company which provide drone repair services.",
+            "Dashboard for admin and user.",
+            "Next.js, Razorpay, clerkjs, Resend, Prisma",
+            "Backend APIs, Authentication, Payment gateway (Razorpay)"
         ],
         image: 'quadxcare.png'
     },
@@ -18,16 +21,18 @@ const ProjectList = [
         github: "",
         url: "https://www.barbarik.ai/",
         description: [
-            "Built a landing page for a startup company.",
+            "Landing page for the startup company.",
+            "Helped with product development",
+            "Next.js, TailwindCSS, clerkjs, Prisma ",
         ],
         image: 'Barbarik.png'
     },
     {
         name: "My Portfolio site",
         github: "https://github.com/anjumann/dev-Portfolio",
-        url: "https://anjuman.site/",
+        url: "https://anjuman.vercel.site/",
         description: [
-            "This portfolio Site.",
+            "This is portfolio to showcase my skills.",
         ],
         image: 'portfolio-new.png'
     },
@@ -36,7 +41,8 @@ const ProjectList = [
         github: "https://github.com/anjumann/sloth-ui",
         url: "https://sloth-ui.vercel.app/",
         description: [
-            "A SaaS landing Page Template.",
+            "Built a SaaS landing Page Template.",
+            "Next.js, TailwindCSS",
         ],
         image: 'slothui.png'
     },
@@ -46,6 +52,8 @@ const ProjectList = [
         url: "https://incridea.in/",
         description: [
             "A full stack application to handle Students during College Fest.",
+            "Used by 8000+ students from my college and other colleges.",
+            "React.js, Node.js, Tailwind, Razorpay, Firebase"
         ],
         image: 'incridea.png'
     },
