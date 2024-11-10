@@ -87,7 +87,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className=" py-2 px-6 col-span-4 font-rem text-justify">
-                {
+                {/* {
                     ProjectList.map((project, index) => {
                         return (
                             <div className="grid grid-rows-2 md:grid-cols-4 gap-x-3 place-content-center md:place-content-start h-fit group " key={index}>
@@ -126,12 +126,14 @@ const Projects = () => {
 
                                     </div>
                                 </div>
-                            </div>  
+                            </div>
                         )
                     })
-                }
+                } */}
 
-
+                <div className="font-rem">
+                    Updating Soon...
+                </div>
 
 
             </div>

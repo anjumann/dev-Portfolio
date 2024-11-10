@@ -70,6 +70,11 @@ const languages = [
 
 const backend = [
     {
+        "name": "NestJS",
+        "color": "border-red-500",
+        "logo": "nextjs-logo.png"
+    },
+    {
         "name": "Next.js",
         "color": "border-black dark:border-white",
         "logo": "nextjs-logo.png"
